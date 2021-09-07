@@ -6,11 +6,11 @@ namespace Calculadora
 {
     public class Division
     {
-        decimal dividendo, divisor;
+        double dividendo, divisor;
         
         //decimal n1, n2;
 
-        public static decimal Div(Int32 dividendo, int divisor)
+        public static double Div(double dividendo, double divisor)
         {
             try
             {
