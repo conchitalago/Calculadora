@@ -28,10 +28,14 @@ namespace Calculadora.Test
         public void TestMultiply()
         {
             var resul = Multiplicacion.Multiply(5, 5);
-            Assert.AreEqual(25, resul); 
+            Assert.AreEqual(25, resul);
+
         }
+        [TestMethod]
         public void TestDivision()
         {
+            var result = Division.Div(25, 0);
+            Assert.AreEqual(5, result);
 
         }
     }
