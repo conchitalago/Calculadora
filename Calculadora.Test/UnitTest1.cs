@@ -21,7 +21,7 @@ namespace Calculadora.Test
         public void TestRestaFail()
         {
             var resultado = Resta.Substract(-2, 1);
-            Assert.AreEqual(0, resultado);
+            Assert.AreNotEqual(2, resultado);
 
         }
         [TestMethod]
@@ -31,12 +31,29 @@ namespace Calculadora.Test
             Assert.AreEqual(25, resul);
 
         }
-        [TestMethod]
+/*        [TestMethod]
         public void TestDivision()
         {
-            var result = Division.Div(25, 0);
-           // Assert.AreEqual(5, result);
+            var result = Division.Div(2, 0);
+            //Assert.AreEqual(, result);
 
+        }*/
+        [TestMethod]
+        public void FactorialTest()
+        {
+            int result = Factorial.Fact(3);
+            Assert.AreEqual(6, result);
+        }
+        [TestMethod]
+        public void FactorialMockTest()
+        {
+            var result = Factorial.Fact(3);
+            Assert.AreNotEqual(6, result);
+        }
+        [TestMethod]
+        public void ReverseWord()
+        {
+            
         }
     }
 }

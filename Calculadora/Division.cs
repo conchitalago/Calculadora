@@ -7,23 +7,33 @@ namespace Calculadora
     public class Division
     {
         double dividendo, divisor;
-        
+       
         //decimal n1, n2;
+
 
         public static double Div(double dividendo, double divisor)
         {
-            try
+            if(divisor != 0)
             {
                 return dividendo / divisor;
             }
-            catch(DivideByZeroException)
+            else
             {
-                throw new DivideByZeroException("Ups");
-            }
+                throw new DivideByZeroException();
+           }
 
-            //if (divisor == 0)
-            //    throw new DivideByZeroException();
-            //return dividendo / divisor;
+            //try
+            //{
+            //    return dividendo / divisor;
+            //}
+            //catch(DivideByZeroException)
+            //{
+            //    Console.WriteLine("Ups!No se puede dividir entre 0");
+            //    return 0;
+
+            //}
+
+
 
         }
         //public static int Debt(int dividendo, int divisor)
