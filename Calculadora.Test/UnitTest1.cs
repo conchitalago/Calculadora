@@ -51,9 +51,28 @@ namespace Calculadora.Test
             Assert.AreNotEqual(6, result);
         }
         [TestMethod]
-        public void ReverseWord()
+        public void FabonacciTest()
         {
-            
+            var result = Fabonacci.Fab(10);
+            Assert.AreEqual(55, result);
+        }
+        [TestMethod]
+        public void FabonacciTestMock()
+        {
+            var result = Fabonacci.Fab(10);
+            Assert.AreNotEqual(55, result);
+        }
+        [TestMethod]
+        public void Fabonnaccilesstwo()
+        {
+            var result = Fabonacci.Fab(1);
+            Assert.AreEqual(1, result);
+        }
+        [TestMethod]
+        public void FabonnaccilesstwoMock()
+        {
+            var result = Fabonacci.Fab(1);
+            Assert.AreEqual(10, result);
         }
     }
 }
